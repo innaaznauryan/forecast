@@ -1,0 +1,39 @@
+nav {
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .nav-container {
+        padding: 10px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .tempFormat {
+            display: flex;
+            flex-direction: column;
+            align-self: flex-end;
+            gap: 4px;
+    
+            .tempFormat-component,
+            .tempFormat-component * {
+                cursor: pointer;
+            }
+        }
+    
+        .search {
+            display: flex;
+            align-items: center;
+    
+            input {
+                padding: 10px;
+                border-radius: 6px;
+                border: 0;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
